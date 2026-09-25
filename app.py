@@ -18,7 +18,7 @@ st.set_page_config(
 # Load model and encoders
 # -----------------------------
 
-# model = joblib.load("aqi_model_final.pkl")
+# model = joblib.load("aqi_model_deploy.pkl")
 # state_encoder = joblib.load("state_encoder.pkl")
 # area_encoder = joblib.load("area_encoder.pkl")
 
@@ -31,7 +31,7 @@ st.set_page_config(
 
 @st.cache_resource
 def load_model():
-    return joblib.load("aqi_model_final.pkl")
+    return joblib.load("aqi_model_deploy.pkl")
 
 
 @st.cache_resource
